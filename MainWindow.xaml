@@ -1,0 +1,55 @@
+﻿<Window x:Class="EntregaFinalOficial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntregaFinalOficial"
+        mc:Ignorable="d"
+        Title="Tablas" Height="450" Width="800">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Elecciones" Orientation="Horizontal" Grid.Row="0" Margin="30,30,30,10">
+            <Button Name="Añadir" Content="Añadir" Grid.Row="0" Background="Coral" FontStyle="Oblique" 
+                    Click="botonAñadirInicial"/>
+            <Border CornerRadius="8" BorderThickness="2" BorderBrush="Black">
+                <StackPanel Name="EleccionStackPanel" Orientation="Vertical">
+                    <TextBox Text="Elección" Background="Gray"/>
+                </StackPanel>
+            </Border>
+            <Border CornerRadius="8" BorderThickness="2" BorderBrush="Black">
+                <StackPanel Name="Fecha" Orientation="Vertical">
+                    <TextBox Text="Fecha" Background="Gray"/>
+                </StackPanel>
+            </Border>
+            <Border CornerRadius="8" BorderThickness="2" BorderBrush="Black">
+                <StackPanel Name="NumeroEscaños" Orientation="Vertical">
+                    <TextBox Text="Numero de Escaños" Background="Gray"/>
+                </StackPanel>
+            </Border>
+            <Border CornerRadius="8" BorderThickness="2" BorderBrush="Black">
+                <StackPanel Name="MayoriaAbsoluta" Orientation="Vertical">
+                    <TextBox Text="Mayoria Absoluta" Background="Gray"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <StackPanel x:Name="Muestra" Orientation="Horizontal" Grid.Row="1" Margin="30,10,30,30">
+            <Border CornerRadius="8" BorderThickness="2" BorderBrush="Black">
+                <StackPanel Name="Partido" Orientation="Vertical" HorizontalAlignment="Left">
+                    <TextBox Text="PARTIDO" Background="Gray"/>
+                </StackPanel>
+            </Border>
+            <Border CornerRadius="8" BorderThickness="2" BorderBrush="Black">
+                <StackPanel Name="Escaños" Orientation="Vertical">
+                    <TextBox Text="Escaños" Background="Gray"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
+
+
+    
+
